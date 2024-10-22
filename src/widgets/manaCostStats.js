@@ -2,24 +2,10 @@ import * as d3 from "d3";
 class ManaCostStats {
     constructor() {
     }
-    buildStats(element){
-        const data = [
-            { cost: 0, count: 2 },
-            { cost: 1, count: 8 },
-            { cost: 2, count: 12 },
-            { cost: 3, count: 15 },
-            { cost: 4, count: 10 },
-            { cost: 5, count: 6 },
-            { cost: 6, count: 4 },
-            { cost: '7+', count: 3 }
-        ];
-
+    buildStats(element,data){
         const margin = { top: 30, right: 30, bottom: 70, left: 60 };
         const width = 460 - margin.left - margin.right;
         const height = 400 - margin.top - margin.bottom;
-
-
-
 
         const svg = d3.select(element)
             .append("svg")

@@ -9,6 +9,12 @@ class Mtg {
             .then(response=>response.json())
             .then(json=>json.cards)
     }
+
+    loadCardsByName(name){
+        return fetch(`${this.baseUrl}cards?name=`+name)
+            .then(response=>response.json())
+            .then(json=>json.cards)
+    }
 }
 
 

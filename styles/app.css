@@ -1,10 +1,20 @@
 .main {
     display: flex;
+    justify-content: center;
 }
 
 .content {
     flex-grow: 0.6;
 }
+
+.flexed {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
 #menu{
     flex-grow: 0.2;
     height: 800px;

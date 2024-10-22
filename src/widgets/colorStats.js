@@ -4,16 +4,7 @@ class ColorStats {
     constructor() {
     }
 
-    buildStats(element){
-        const data = [
-            { color: 'White', count: 15 },
-            { color: 'Blue', count: 12 },
-            { color: 'Black', count: 8 },
-            { color: 'Red', count: 10 },
-            { color: 'Green', count: 18 },
-            { color: 'Colorless', count: 7 }
-        ];
-
+    buildStats(element,data){
         const width = 200;
         const height = 200;
         const radius = Math.min(width, height) / 2;
